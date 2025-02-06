@@ -1,0 +1,48 @@
+/* universal selector */
+*{
+    color: blue;
+     font-size:10px ;
+}
+/* tag/Element selector */
+h1{
+    color: red;
+    text-align: center;
+
+}
+/* Attribute selector */
+a[title=google]{
+    color: brown;
+    letter-spacing: 10px;
+}
+/* id selector */
+#idOne{
+    color: blueviolet;
+}
+/* class sector */
+.class{
+    color: aqua;
+    line-height: 30px;
+    text-indent: 40px;
+    word-spacing: 20px;
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color:green ;
+}
+a:active{
+    color: aqua;
+}
+a:visited{
+    color:grey;
+}
+:target{
+    color: red;
+    border: 2px solid orange;
+}
+.float_left image{
+    width: 40%;
+    float: left;
+}
+
