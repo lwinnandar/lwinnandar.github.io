@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:black;
+    color: yellow;
+}
+/* Navbar */
+.navbar {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    padding: 18px;
+    align-items: center;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 60px;
+    height: 60px;
+    margin: 0 15px 0 15px;
+    background-color: rgba(0, 0, 0, 0)
+ 
+}
+.brand h2{
+    letter-spacing: 3px;
+}
+.nav-menu ul{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: end;
+    gap: 10px;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: yellow;
+    padding: 15px;
+    font-size: 20px;
+
+}
+.nav-menu ul li a:hover{
+    color: white;
+    background-color: yellow;
+    border-radius: 5px;
+}
+/* Hero Image */
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/hero-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    
+    /* For Text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+}
+.hero-text{
+    font-size: 2em;
+    font-size: bold;
+}
+.hero-text p{
+    margin: 20px 0px;
+}
+.hero-text p{
+    margin: 20px 0px;
+}
+
+.hero-text p a{
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: yellowgreen;
+    color: white;
+}
+}

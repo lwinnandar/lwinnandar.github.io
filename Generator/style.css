@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+    color:blue;
+}
+/* Navbar */
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    align-items: center;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand img{
+    width: 80px;
+    height: 80px;
+    margin: 0 15px 0 15px;
+}
+.brand h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.nav-product ul{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    justify-content: end;
+    gap:10px;
+}
+.nav-product ul li{
+    list-style-type: none;
+
+}
+.nav-product ul li a{
+    text-decoration: none;
+    color: blue;
+    padding: 15px;
+    font-size: 20px;
+}
+.nav-product ul li a:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 3px;
+}
+/* Hero image */
+.hero-container{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(images/hero.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(red, green, blue, alpha);
+    background-blend-mode: multiply;
+}
+.hero-text{
+    font-size: 1em;
+    font size: bold;
+}
+.hero-text p{
+    margin: 20px 0px;
+}
+.hero-text h1{
+    background-color: burlywood;
+
+}
+.hero-text p a{
+    text-decoration: none;
+    color: blue;
+}
+.btn{
+    text-decoration: none;
+    color: gold;
+}
