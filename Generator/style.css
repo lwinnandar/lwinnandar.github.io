@@ -61,7 +61,7 @@ body{
 }
 .hero-text{
     font-size: 1em;
-    font size: bold;
+    font-size: bold;
 }
 .hero-text p{
     margin: 20px 0px;
@@ -78,3 +78,21 @@ body{
     text-decoration: none;
     color: gold;
 }
+
+/* Signature Product */
+.signature{
+    display: grid;
+    padding: 20px 30px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    background-color: aqua;
+
+}
+.signature-image{
+    width: 100%;
+}
+.signature-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Lessons</h1>
+    <script>
+        let firstName = "Developer";
+        let lastName  = "Lwin Nandar";
+        console.log(firstName,lastName);
+        console.log(lastName.length);
+
+        let fullName = firstName +''+ lastName;
+        console.log(fullName);
+
+        console.log("My Name is" + fullName);
+
+        document.write(fullName + '<br>');
+
+        document.write (firstName + '<br>'+lastName + '</br><br>');
+
+        document.write(`${firstName} <br> ${lastName} </br><br>`);
+        
+        document.write(`My name is ${fullName}.I am 25 years old.<br>`);
+
+        document.write(firstName.toUpperCase()+'<br>');
+        document.write(firstName.toLowerCase()+'<br>');
+
+        let myJob = "     Senior    Developer  ";
+        document.write(myJob.trim()+'<br>');
+
+        let ser = "Javascript is funny";
+        document.write(ser.search('is')+'<br>');
+        
+        let rep = "I want to visit Mandalay";
+        document.write(rep.replace('Mandalay','Yangon')+'<br>');
+
+
+        document.write('I\'m Lwin Nandar');
+        document.write("I'm Lwin Nandar,My height is 5'6\"");
+        document.write(`I'm Lwin Nandar,My height is 5'6\"`);
+        
+    </script>
+    
+</body>
+</html>
