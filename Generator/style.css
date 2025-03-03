@@ -3,13 +3,14 @@
     margin: 0;
 }
 body{
-    background-color: whitesmoke;
-    color:blue;
+     background-color:#ebeae4;
+     color: black;
+    
 }
 /* Navbar */
 .navbar{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     padding: 10px;
     align-items: center;
 }
@@ -21,10 +22,12 @@ body{
     width: 80px;
     height: 80px;
     margin: 0 15px 0 15px;
+    border-radius: 20px;
 }
 .brand h2{
     font-size: 20px;
     letter-spacing: 2px;
+
 }
 .nav-product ul{
     display: grid;
@@ -38,14 +41,14 @@ body{
 }
 .nav-product ul li a{
     text-decoration: none;
-    color: blue;
+    color: black;
     padding: 15px;
     font-size: 20px;
 }
 .nav-product ul li a:hover{
     color: white;
-    background-color: blue;
-    border-radius: 3px;
+    background-color: #755690;
+    border-radius: 5px;
 }
 /* Generator image */
 .hero-container{
@@ -57,7 +60,7 @@ body{
     background-position: center;
     background-size: cover;
     background-color: rgba(red, green, blue, alpha);
-    background-blend-mode: multiply;
+    background-blend-mode: multiply;   
 
 }
 .hero-text{
@@ -68,36 +71,118 @@ body{
     margin: 20px 0px;
 }
 .hero-text h1{
-    background-color: burlywood;
+    background-color: #e5bae5;
 
 }
 .hero-text p a{
     text-decoration: none;
-    color: blue;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    
 }
 .btn{
     text-decoration: none ;
     display: inline-block;
     padding: 10px 20px;
      /* margin: 0px 15px 0 15px; */
-    background-color: yellowgreen;
+    background-color: #871210;
      color: white;
 }
+.about h1{
+    font-size: 1.5em;
+    /* padding: 20px 30px; */
+    margin: 0 15px 0 15px;
+}
     
+.about{
+    font-size:1.2em;
+    color: black;
+    /* padding: 20px 30px; */
+    margin: 0 15px 0 15px;
+    
+    
+}
+
+.services{
+    padding: 10px;
+    text-align: center ;
+}
+.product{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color:#e5bae5 ;
+    padding: 20px 30px;
+    margin: 0 15px 0 15px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    gap: 16px;
+    transition: 0.3s;
+
+}
+.container li{
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 80px;
+    border-radius: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+}
+.container li img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container li,
+.container li img
+{
+transition: 0.3s;
+
+}
+container li .content{
+    transition: 1.5s ease;
+    
+}
+.container:hover{
+    gap: 0;
+
+}
+.container li :hover{
+    gap: 0;
+}
+.container li:hover{
+   flex: 0 1 260px;
+   scale: 1.1;
+   z-index: 10;
+   opacity: 1;
+}
 
 /* Signature Product */ 
  .signature{ 
     display: grid;
+    grid-template-columns: 1fr 1fr;
      padding: 20px 30px; 
      margin:  0px 15px 0 15px ;
     grid-template-columns: 1fr 1fr;
-     column-gap: 50px;
-     background-color: burlywood;
-    
+     column-gap: 50px;  
 
 }
 .signature-image{
  width: 100%;
+
 }
 .signature-about{
  display: flex;
@@ -106,40 +191,76 @@ body{
  align-items: start;
 
 }
-.about{
-    font-size: 1.2em;
-    color: blue;
-    padding:10px;
-    background-color: burlywood;
-    
-}
-/* Lion About */
-.lion{ 
-    display: grid;
-     /* padding: 50px 60px; */
-     /* margin:  150px 150px 150px 150px ; */
-     /* grid-template-columns: 1fr 1fr; */
-     column-gap: 50px;
-     background-color: burlywood;
-    
-     
-    
 
-}
-.lion-image{
- width: 100%;
-}
-.lion-about{
- display: flex;
- flex-direction: column; 
- justify-content: center;
- align-items: start;
-
-}
-.services{
+.prices{
     padding: 20px;
-    background-color: burlywood;
+    text-align: center;
+    background-color: #e5bae5;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color:#e5bae5;
+    color: black;
 
 }
-    
-    
+
+footer a{
+    text-decoration: none;
+    color: #871210;
+}
+
+.map{
+    padding: 20px 30px; 
+    margin:  0px 15px 0 15px ;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 70px;
+}
+
+.info {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.contact-icon{
+    position: relative;
+    background-color: #bc4626;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+
+}
+.form-group{
+    margin-bottom: 20px;
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #e5bae5;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    color:#bc4626;
+}

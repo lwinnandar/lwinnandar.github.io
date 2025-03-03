@@ -15,7 +15,22 @@
          console.log('myId');
          console.log('myId.innerText');
          console.log('myId.innerHTML');
-        }
+
+         myId.innerText = `Javascript is so funny!</i>`;
+
+         //class selector
+         let myClass = document.getElementsByClassName('myClass');
+            console.log(myClass);
+            console.log(myClass[1]);
+            console.log(myClass[1].innerText);
+
+         }
+        //tag selector
+        let tagName = document.getElementsByTagName('p');
+        console.log(tagName);
+        console.log(tagName[0]);
+        console.log(tagName[0].innerText);
+        
         
     </script>
     
